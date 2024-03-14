@@ -1,0 +1,225 @@
+/*------------------------------
+  Laptop Styling (ベース)
+------------------------------*/
+body {
+    font-size: 1.1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/*--- Reusable Classes ---*/
+.container {
+    padding: 0 40px;
+}
+
+.container-small {
+    padding: 0 40px;
+}
+
+/* --- Common ---*/
+.common {
+    padding: 110px 0 50px;
+}
+
+.common h1 {
+    margin-bottom: 10px;
+}
+
+.common p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/*--- Header ---*/
+.header {
+    padding: 15px 20px;
+}
+
+.header-logo-img {
+    width: 40px;
+}
+
+.header-logo-title {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.header-nav-menu-item {
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+/*--- Main - Hero ---*/
+.main-hero {
+    padding: 110px 0 50px;
+}
+
+.main-hero-item img {
+    width: 80%;
+    max-width: 1200px;
+}
+
+.main-hero-item h1 {
+    margin-top: 30px;
+}
+
+/*--- Main - About ---*/
+.main-about {
+    padding: 50px 0 80px;
+}
+
+.main-about p {
+    font-size: 1.3rem;
+    margin: 60px 0;
+    text-align: center;
+}
+
+/*--- Main - Contents ---*/
+.main-contents {
+    padding: 50px 0;
+}
+
+.main-contents a {
+    font-size: 1.5rem;
+}
+
+.main-contents ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.main-contents li {
+    margin: 0;
+    width: 33%;
+}
+
+/*--- Main - Profile ---*/
+.main-profile {
+    padding: 50px 0;
+}
+
+.main-profile-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-profile-item img {
+    display: inline-block;
+    max-width: 200px;
+    border-radius: 20%;
+}
+
+.main-profile-item p {
+    max-width: 600px;
+    margin-left: 25px;
+}
+
+/*--- Main - Outline ---*/
+.main-outline {
+    padding: 50px 0;
+}
+
+/*--- Main - Chars ---*/
+.main-chars {
+    padding: 50px 0;
+}
+
+/*--- Main - Does ---*/
+.main-does {
+    padding: 50px 0;
+}
+
+.main-does-item {
+    display: flex;
+}
+
+.main-does-item img {
+    margin-left: 20px;
+    width: 500px;
+}
+
+.main-does li {
+    margin-bottom: 25px;
+}
+
+/*--- Main - Test ---*/
+.main-test {
+    padding: 50px 0;
+}
+
+.main-test-item img {
+    max-width: 300px;
+}
+
+/*--- Main - Mindscape ---*/
+.main-mindscape {
+    padding: 50px 0;
+}
+
+.main-mindscape-item {
+    margin-bottom: 60px;
+}
+
+.main-mindscape-item p {
+    margin: 0 0 20px 0;
+}
+
+/*--- Main - History ---*/
+.main-history {
+    padding: 50px 0;
+}
+
+.main-history-item {
+    margin-bottom: 50px;
+}
+
+.main-history-item-flex {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-history-item-flex p {
+    margin: 0 20px 0 0;
+}
+
+.vertically-long {
+    width: 600px;
+}
+
+.long-sideways {
+    width: 1500px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*--- Main - Last ---*/
+.main-last {
+    padding: 50px 0;
+}
+
+.main-last p {
+    font-size: 1.3rem;
+    margin: 60px 0;
+}
+
+.main-last img {
+    margin-bottom: 50px;
+}

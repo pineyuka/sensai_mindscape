@@ -1,0 +1,403 @@
+/*---------------------------
+  Default Styling
+---------------------------*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #4F646F;
+    font-family: 'Zen Maru Gothic', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+}
+
+h1 {
+    margin-top: 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+p {
+    line-height: 1.8;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;   /* 親要素以上に広がらないように制御する */
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+
+/*--- Reusable Classes ---*/
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container-small {  /* 長文でも読みやすいように小さめのコンテナ */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* その場でふわっと出現 */
+.fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+@keyframes fadeInAnime{
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 1;
+    }
+}
+
+/* ぼかしから出現 */
+.blur{
+	animation-name:blurAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes blurAnime{
+  from {
+	filter: blur(10px);
+	transform: scale(1.02);
+  }
+
+  to {
+	filter: blur(0);
+	transform: scale(1);
+  }
+}
+
+/* スクロールするとふわっと出現 */
+.fadeUpTrigger{
+    opacity: 0;
+    }
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+    @keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ページトップリンク */
+/* リンクの形状 */
+#page-top a {
+    display: flex;
+	justify-content:center;
+	align-items:center;
+	background: #FFF;
+	border-radius: 5px;
+	width: 60px;
+	height: 60px;
+	color: #4F646F;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+}
+#page-top a:hover{
+	background: #DFAC99;
+    color: #FFF;
+    border: 2px solid #FFF;
+}
+
+/* リンクを右下に固定 */
+#page-top {
+	position: fixed;
+	right: 20px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}
+
+/* Common */
+.common {
+    background: #F1ECD3;
+    text-align: center;
+}
+
+.common h1 {
+    display: inline-block;
+    border-bottom: 2px solid #4F646F;
+}
+
+.common p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Header ---*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background: #FFF;
+}
+
+.header a {
+    color: #4F646F;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-menu {
+    display: flex;
+}
+
+.header-nav-menu-item > a:hover,
+.header-nav-menu-item > a:focus {
+    color: #DFAC99
+}
+
+/*--- Main - Hero ---*/
+.main-hero {
+    background: #F1ECD3;
+    margin: 0 auto;
+}
+
+.main-hero-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-hero-item h1 {
+    display: inline-block;
+    writing-mode: vertical-rl;
+    text-align: start;
+    letter-spacing: 0.07em;
+}
+
+/*--- Main - About ---*/
+.main-about {
+    background: #D1DCB8;
+}
+
+.main-about p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Main - Contents ---*/
+.main-contents {
+    background: #F1ECD3;
+    text-align: center;
+}
+
+.main-contents li:last-child {
+    margin-bottom: 0;
+}
+
+.main-contents-item a {
+    color: #4F646F;
+    background: #FFF;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+/*--- Main - Profile ---*/
+.main-profile {
+    background: #DFAC99;
+}
+
+.name {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/*--- Main - Outline ---*/
+.main-outline {
+    background: #D1DCB8;
+}
+
+.main-outline p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Main - Chars ---*/
+.main-chars {
+    background: #DFAC99;
+}
+
+.main-chars p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Main - Does ---*/
+.main-does {
+    background: #D1DCB8;
+}
+
+.main-does li:last-child {
+    margin-bottom: 0
+}
+
+.main-does p {
+    margin: 0;
+}
+
+/*--- Main - Test ---*/
+.main-test {
+    background: #F1ECD3;
+}
+
+.main-test-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-test a {
+    display: block;
+    width: 250px;
+    color: #FFF;
+    background: #DFAC99;
+    border-radius: 25px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .3);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+/*--- Main - Mindscape ---*/
+.main-mindscape {
+    background: #D1DCB8;
+    text-align: center;
+}
+
+.main-mindscape-item:last-child {
+    margin-bottom: 0;
+}
+/*
+.main-mindscape video {
+    width: 100%;
+    max-width: 600px;
+}
+*/
+
+/*--- Main - History ---*/
+.main-history {
+    background: #D1DCB8;
+}
+
+.main-history h3 {
+    text-align: center;
+}
+
+.main-history-item:last-child {
+    margin-bottom: 0;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+/*--- Main - Last ---*/
+.main-last {
+    background: #F1ECD3;
+    text-align: center;
+}
+
+.main-last p:last-child {
+    margin-bottom: 0;
+}
+
+.main-last img {
+    max-width: 400px;
+}
+
+.references {
+    width: 80%;
+    text-align: left;
+    list-style-type: disc;
+    margin: auto;
+    line-height: 1.5;
+}
+
+/*--- Footer ---*/
+.footer {
+    color: #FFF;
+    background: #4F646F;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 4px;
+}

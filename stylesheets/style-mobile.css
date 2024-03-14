@@ -1,0 +1,244 @@
+/*------------------------------
+  Mobile Styling
+------------------------------*/
+/* 画面サイズが48em(768px)以下になったらモバイル版に切り替える */
+/* 16px(ブラウザのデフォルトの文字サイズ) × 48 = 768px */
+@media screen and (max-width: 48em) {
+    
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/*--- Reusable Classes ---*/
+.container {
+    padding: 0 20px;
+}
+.container-small {
+    padding: 0 20px;
+}
+
+/*--- Common ---*/
+.common {
+    padding: 80px 0 40px;
+}
+
+.common p {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.common p > br {
+    display: none;
+}
+
+/*--- Header ---*/
+.header {
+    padding: 10px 15px;
+}
+
+.header-logo-img {
+    width: 40px;
+}
+
+.header-logo-title {
+    display: none;
+}
+
+.header-nav-menu-item {
+    margin-left: 15px;
+    font-size: 0.8rem;
+}
+
+/*--- Main - Hero ---*/
+.main-hero {
+    padding: 80px 10px 30px;
+}
+
+.main-hero-item img {
+    width: 80%;
+}
+
+/*--- Main - About ---*/
+.main-about {
+    padding: 40px 0;
+}
+
+.main-about p {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.main-about p > br {
+    display: none; 
+}
+
+/*--- Main - Contents ---*/
+.main-contents {
+    padding: 40px 0 ;
+}
+
+.main-contents-item {
+    margin: auto;
+}
+
+.main-contents li {
+    margin-bottom: 40px;
+}
+
+.main-contents a {
+    font-size: 1.3rem;
+}
+
+.main-contents p:last-child {
+    margin-bottom: 0;
+}
+
+/*--- Main - Profile ---*/
+.main-profile {
+    padding: 40px 0;
+}
+
+.main-profile-item {
+    display: block;
+}
+
+.main-profile-item img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 70%;
+    border-radius: 10%;
+}
+
+.main-profile-item p {
+    margin-bottom: 0;
+}
+
+/*--- Main - Outline ---*/
+.main-outline {
+    padding: 40px 0;
+}
+
+/*--- Main - Chars ---*/
+.main-chars {
+    padding: 40px 0;
+}
+
+/*--- Main - Does ---*/
+.main-does {
+    padding: 40px 0;
+}
+
+.main-does-item {
+    width: 100%;
+}
+
+.main-does-item p {
+    margin-bottom: 20px;
+}
+
+.main-does-item img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.main-does li {
+    margin-bottom: 30px;
+}
+
+/*--- Main - Test ---*/
+.main-test {
+    padding: 40px 0;
+}
+
+.main-test-item {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.main-test-item img {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+/*--- Main - Mindscape ---*/
+.main-mindscape {
+    padding: 40px 0;
+}
+
+.main-mindscape-item {
+    margin-bottom: 40px;
+}
+
+.main-mindscape-item p {
+    text-align: left;
+}
+
+.main-mindscape-item p > br {
+    display: none;
+}
+
+/*--- Main - History ---*/
+.main-history {
+    padding: 40px 0;
+}
+
+.main-history-item {
+    margin-bottom: 50px;
+}
+
+.main-history-item-flex {
+    display: block;
+}
+
+.main-history-item-flex p {
+    margin-bottom: 10px;
+}
+
+.vertically-long {
+    width: 80%;
+    max-width: 300px;
+}
+
+.long-sideways {
+    width: 90%;
+    max-width: 500px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*--- Main - Last ---*/
+.main-last {
+    padding: 40px 0;
+}
+
+.main-last p {
+    text-align: left;
+    margin: 40px 0;
+}
+
+.main-last p > br {
+    display: none;
+}
+
+.main-last img {
+    text-align: center;
+    max-width: 300px;
+    margin-bottom: 30px;
+}
+}
